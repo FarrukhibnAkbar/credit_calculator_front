@@ -99,7 +99,7 @@ export default {
     async calculateCredit() {
       this.errorMessage = '';
       try {
-        const response = await axios.post('http://localhost:8000/api/v1/calculate', {
+        const response = await axios.post('http://194.233.90.79/api/v1/calculate', {
           principal: parseInt(this.principal),
           annual_rate: this.annualRate,
           months: this.months,
